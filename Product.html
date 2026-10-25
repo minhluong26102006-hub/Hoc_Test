@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bún - Bún Đậu Mắm Tôm Hà Nội Chuẩn Vị</title>
+    <!-- Nhúng font chữ Be Vietnam Pro hỗ trợ tiếng Việt sắc nét từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Khung bọc giới hạn độ rộng trang web -->
+    <div class="page-wrapper">
+
+        <!-- ================= HEADER & ĐIỀU HƯỚNG ================= -->
+        <header class="site-header">
+            <div class="header-brand">
+                <h1>Shop Bún</h1>
+                <span class="brand-tagline">Bún đậu mắm tôm gia truyền</span>
+            </div>
+
+            <!-- Thanh menu đơn giản -->
+            <nav class="main-nav" aria-label="Menu chính">
+                <a href="#gioi-thieu" class="nav-link active">Giới thiệu</a>
+                <a href="#dac-biet" class="nav-link">Món đặc biệt</a>
+                <a href="#thuc-don" class="nav-link">Thực đơn</a>
+                <a href="#lien-he" class="nav-link">Liên hệ</a>
+            </nav>
+
+            <!-- Khối hiển thị giỏ hàng / gian hàng -->
+            <div class="cart-status" title="Số lượng món trong gian hàng">
+                <!-- Icon giỏ hàng nét thẳng, góc vuông chuẩn UI -->
+                <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                    <rect x="3" y="6" width="18" height="15"></rect>
+                    <path d="M8 6V4a4 4 0 0 1 8 0v2"></path>
+                    <line x1="10" y1="11" x2="10" y2="15"></line>
+                    <line x1="14" y1="11" x2="14" y2="15"></line>
+                </svg>
+                <span class="cart-label">Gian hàng:</span>
+                <span id="cart-count" class="cart-badge">0</span>
+            </div>
+        </header>
+
+        <!-- ================= BANNER GIỚI THIỆU ================= -->
+        <section id="gioi-thieu" class="hero-banner">
+            <div class="banner-content">
+                <span class="banner-pill">ĐẬM ĐÀ • NÓNG GIÒN • CHUẨN VỊ PHỐ CỔ</span>
+                <h2>Mẹt Bún Đậu Đậm Đà Chuẩn Vị Hà Thành</h2>
+                <p>
+                    Thưởng thức từng miếng đậu mơ rán lướt ván giòn tan, chả cốm Ước Lễ dẻo bùi, 
+                    thịt bắp luộc thơm ngọt cùng bát mắm tôm Thanh Hóa đánh sủi bọt dậy mùi quyến rũ.
+                </p>
+                <!-- Các ưu điểm nổi bật với kiểu dáng vuông vức phẳng -->
+                <div class="feature-badges">
+                    <div class="feature-item">
+                        <span class="square-bullet">■</span> Đậu chiên nóng liên tục
+                    </div>
+                    <div class="feature-item">
+                        <span class="square-bullet">■</span> Mắm tôm gia truyền thơm ngon
+                    </div>
+                    <div class="feature-item">
+                        <span class="square-bullet">■</span> Giao nhanh nóng giòn 30 phút
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BÚN ĐẬU ĐẶC BIỆT ================= -->
+        <section id="dac-biet" class="section-container">
+            <h2 class="section-title">Bún đậu đặc biệt</h2>
+
+            <!-- Đồng bộ cả 2 class: featured-product và product-detail -->
+            <div class="featured-product product-detail">
+                <div class="featured-media">
+                    <img
+                        class="featured-img"
+                        src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                        alt="Bún đậu ngon"
+                    >
+                    <span class="ribbon-badge">MÓN ĐẶC SẢN</span>
+                </div>
+
+                <div class="featured-info">
+                    <span class="item-tag">COMBO ĐỦ VỊ NHẤT</span>
+                    <h3 class="product-title">Bún đậu đặc biệt</h3>
+                    <p class="price">Giá: <span>99.000đ</span></p>
+                    <p class="product-desc">
+                        Mẹt bún đầy đặn bao gồm: bún lá cắt miếng, đậu hũ lướt ván vàng giòn, 
+                        thịt chân giò bắp luộc, chả cốm dẻo thơm, nem rán giòn rụm, dồi sụn nướng 
+                        và đĩa rau thơm tươi sạch kèm quất, ớt tươi.
+                    </p>
+
+                    <div class="order-controls">
+                        <div class="select-group">
+                            <label for="size">Chọn Combo size:</label>
+                            <select id="size">
+                                <option value="M">Size M - Tiêu chuẩn (1 người)</option>
+                                <option value="L">Size L - No bụng (1-2 người)</option>
+                                <option value="XL">Size XL - Đầy đặn (2-3 người)</option>
+                                <option value="XXL">Size XXL - Siêu to (3-4 người)</option>
+                            </select>
+                        </div>
+
+                        <button id="add-button" class="btn-buy" type="button">
+                            <!-- Icon nút mua nét thẳng vuông vức -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Mua bún
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DANH SÁCH SẢN PHẨM ================= -->
+        <section id="thuc-don" class="section-container">
+            <h2 class="section-title">Danh sách sản phẩm</h2>
+
+            <!-- Lưới sản phẩm responsive: 4 cột desktop, 2 cột tablet, 1 cột mobile -->
+            <div class="product-list">
+
+                <!-- Sản phẩm 1 -->
+                <div class="product-card product">
+                    <div class="product-thumb">
+                        <img class="product-img"
+                             src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                             alt="Bún đậu size nhỏ">
+                        <span class="card-tag">Tiết kiệm</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Bún đậu size nhỏ</h3>
+                        <p class="price">35.000đ</p>
+                    </div>
+                    <button class="btn-buy btn-card-buy" data-name="Bún đậu size nhỏ" type="button">
+                        Mua bún
+                    </button>
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="product-card product">
+                    <div class="product-thumb">
+                        <img class="product-img"
+                             src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                             alt="Bún đậu size vừa">
+                        <span class="card-tag">Phổ biến</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Bún đậu size vừa</h3>
+                        <p class="price">49.000đ</p>
+                    </div>
+                    <button class="btn-buy btn-card-buy" data-name="Bún đậu size vừa" type="button">
+                        Mua bún
+                    </button>
+                </div>
+
+                <!-- Sản phẩm 3 -->
+                <div class="product-card product">
+                    <div class="product-thumb">
+                        <img class="product-img"
+                             src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                             alt="Bún đậu size lớn">
+                        <span class="card-tag">Đầy đặn</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Bún đậu size lớn</h3>
+                        <p class="price">69.000đ</p>
+                    </div>
+                    <button class="btn-buy btn-card-buy" data-name="Bún đậu size lớn" type="button">
+                        Mua bún
+                    </button>
+                </div>
+
+                <!-- Sản phẩm 4 -->
+                <div class="product-card product">
+                    <div class="product-thumb">
+                        <img class="product-img"
+                             src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                             alt="Bún đậu size đại">
+                        <span class="card-tag">Đặc biệt</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Bún đậu size đại</h3>
+                        <p class="price">79.000đ</p>
+                    </div>
+                    <button class="btn-buy btn-card-buy" data-name="Bún đậu size đại" type="button">
+                        Mua bún
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer id="lien-he" class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Shop Bún</h3>
+                    <p class="footer-desc">
+                        Chuyên bún đậu mắm tôm Hà Nội truyền thống. Nguyên liệu sạch tươi mới trong ngày, 
+                        đậu chiên giòn rụm, mắm tôm thơm ngậy chuẩn vị phố cổ.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Giờ mở cửa</h4>
+                    <ul class="footer-info-list">
+                        <li><strong>Thứ 2 - Thứ 6:</strong> 09:00 - 21:30</li>
+                        <li><strong>Thứ 7 - Chủ Nhật:</strong> 08:30 - 22:00</li>
+                        <li><em>(Phục vụ ăn tại quán & mang về)</em></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Thông tin liên hệ</h4>
+                    <ul class="footer-info-list">
+                        <li><strong>Địa chỉ:</strong> 123 Phố Ẩm Thực, Quận 1, TP. Hồ Chí Minh</li>
+                        <li><strong>Hotline:</strong> 0901 234 567</li>
+                        <li><strong>Email:</strong> datmon@shopbun.vn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Shop Bún. Tất cả quyền được bảo lưu. Giữ trọn hương vị ẩm thực truyền thống.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Thông báo nổi (Toast) khi thêm món vào giỏ hàng -->
+    <div id="toast" class="toast-notification" role="status" aria-live="polite"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
