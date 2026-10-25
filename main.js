@@ -1,4 +1,3 @@
-
 let cartCount = 0;
 
 const addButton = document.getElementById("add-button");
@@ -8,10 +7,6 @@ const toastElement = document.getElementById("toast");
 
 let toastTimeout = null;
 
-/**
- * 
- * @param {string} message 
- */
 function showToast(message) {
     if (!toastElement) return;
 
