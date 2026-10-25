@@ -1,9 +1,9 @@
-# Shop Bún - Giao Diện Bún Đậu Mắm Tôm Hà Nội
+# Shop Bún - Giao Diện Bún Đậu Mắm Tôm
 
 Website giới thiệu và đặt món cho cửa hàng bún đậu mắm tôm "Shop Bún".
 
-## ✨ Tính năng nổi bật
-- **Tông màu ẩm thực:** Vàng kem, cam nhạt và nâu đậm ấm cúng, ngon miệng, chuẩn phong cách ẩm thực Hà Thành.
+## Tính năng nổi bật
+- **Tông màu ẩm thực:** Vàng kem, cam nhạt và nâu đậm ấm cúng, ngon miệng, chuẩn phong cách ẩm thực.
 - **Phong cách thiết kế:** Góc vuông vức / bo tối đa 2px, đường nét phẳng tinh tế, sạch sẽ.
 - **Bố cục đầy đủ:**
   - Header với thương hiệu, thanh menu và huy hiệu số lượng giỏ hàng.
