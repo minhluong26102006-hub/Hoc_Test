@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bún - Bún Đậu Mắm Tôm Hà Nội</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="ml-body">
+
+    <div class="ml-page-wrapper">
+
+        <!-- Navigation bar -->
+        <header class="ml-site-header">
+            <div class="ml-header-brand-wrap">
+                <a href="#intro" class="ml-brand-link">
+                    <h1 class="ml-brand-title">Shop Bún</h1>
+                    <span class="ml-brand-tagline">Bún đậu mắm tôm truyền thống</span>
+                </a>
+            </div>
+
+            <nav class="ml-main-nav" aria-label="Menu chính">
+                <a href="#intro" class="ml-nav-link ml-nav-link--active">Giới thiệu</a>
+                <a href="#featured" class="ml-nav-link">Món đặc biệt</a>
+                <a href="#menu" class="ml-nav-link">Thực đơn</a>
+                <a href="#reviews" class="ml-nav-link">Đánh giá</a>
+                <a href="#contact" class="ml-nav-link">Liên hệ</a>
+            </nav>
+
+            <div class="ml-cart-status" title="Số lượng món trong giỏ hàng">
+                <svg class="ml-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="ml-cart-label">Giỏ hàng:</span>
+                <span id="ml-cart-count" class="ml-cart-badge">0</span>
+            </div>
+        </header>
+
+        <!-- Hero banner -->
+        <section id="intro" class="ml-hero-banner">
+            <div class="ml-hero-content">
+                <span class="ml-banner-pill">BÚN ĐẬU GIA TRUYỀN HÀ NỘI</span>
+                <h2 class="ml-hero-title">Mẹt Bún Đậu Mắm Tôm Truyền Thống</h2>
+                <p class="ml-hero-subtitle">
+                    Đậu chiên nóng khi gọi món, chả cốm, nem rán, thịt chân giò luộc và mắm tôm pha chanh ớt vừa miệng. Phục vụ ăn tại chỗ và nhận đơn giao hàng.
+                </p>
+
+                <div class="ml-feature-badges">
+                    <div class="ml-feature-item">Đậu chiên nóng khi gọi món</div>
+                    <div class="ml-feature-item">Mắm tôm pha sẵn hoặc tự pha</div>
+                    <div class="ml-feature-item">Giao hàng tận nơi</div>
+                    <div class="ml-feature-item">Nguyên liệu tươi trong ngày</div>
+                </div>
+
+                <div class="ml-hero-actions">
+                    <a href="#featured" class="ml-btn-hero ml-btn-hero--primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Đặt mẹt đặc biệt
+                    </a>
+                    <a href="#menu" class="ml-btn-hero ml-btn-hero--secondary">Xem thực đơn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured combo -->
+        <section id="featured" class="ml-section-container">
+            <div class="ml-section-header">
+                <span class="ml-sub-heading-pill">MÓN NỔI BẬT</span>
+                <h2 class="ml-section-title">Bún Đậu Mẹt Đặc Biệt</h2>
+            </div>
+
+            <div class="ml-featured-product">
+                <div class="ml-featured-media">
+                    <img class="ml-featured-img"
+                        src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                        alt="Mẹt bún đậu đặc biệt">
+                    <span class="ml-ribbon-badge">BÁN CHẠY</span>
+                </div>
+
+                <div class="ml-featured-info">
+                    <span class="ml-item-tag">COMBO ĐẦY ĐỦ</span>
+                    <h3 class="ml-product-title">Bún Đậu Mẹt Thập Cẩm Đặc Biệt</h3>
+                    <p class="ml-price">Giá: <span id="ml-featured-price" class="ml-price-value">99.000đ</span></p>
+                    <p class="ml-product-desc">
+                        Mẹt gồm bún lá, đậu chiên giòn, thịt bắp chân giò luộc, chả cốm, nem rán, dồi sụn chiên và rau thơm (kinh giới, tía tô, dưa chuột) kèm mắm tôm quất ớt.
+                    </p>
+
+                    <div class="ml-order-controls">
+                        <div class="ml-select-group">
+                            <label for="ml-size-select" class="ml-select-label">Chọn cỡ mẹt:</label>
+                            <select id="ml-size-select" class="ml-select-control">
+                                <option value="M">Cỡ M - 1 người ăn (99.000đ)</option>
+                                <option value="L">Cỡ L - 1 đến 2 người (139.000đ)</option>
+                                <option value="XL">Cỡ XL - 2 đến 3 người (189.000đ)</option>
+                                <option value="XXL">Cỡ XXL - 3 đến 4 người (249.000đ)</option>
+                            </select>
+                        </div>
+
+                        <button id="ml-btn-add-featured" class="ml-btn-buy ml-btn-buy--primary" type="button">
+                            <svg class="ml-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <span>Thêm mẹt đặc biệt vào giỏ</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu list -->
+        <section id="menu" class="ml-section-container">
+            <div class="ml-section-header">
+                <span class="ml-sub-heading-pill">DANH SÁCH MÓN</span>
+                <h2 class="ml-section-title">Thực Đơn Quán</h2>
+                <p class="ml-section-subtitle">Các cỡ mẹt bún đậu tùy theo sức ăn</p>
+            </div>
+
+            <div class="ml-product-list">
+
+                <div class="ml-product-card">
+                    <div class="ml-product-thumb">
+                        <img class="ml-product-img"
+                            src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                            alt="Bún đậu size nhỏ">
+                        <span class="ml-card-tag ml-card-tag--save">Tiết kiệm</span>
+                    </div>
+                    <div class="ml-product-details">
+                        <h3 class="ml-product-title">Bún đậu size nhỏ</h3>
+                        <p class="ml-product-snippet">Gồm bún lá, đậu rán giòn, dưa chuột, rau thơm và mắm tôm.</p>
+                        <div class="ml-price-row">
+                            <span class="ml-price-label">Giá:</span>
+                            <span class="ml-price">35.000đ</span>
+                        </div>
+                    </div>
+                    <button class="ml-btn-buy ml-btn-buy--card" data-name="Bún đậu size nhỏ" type="button">
+                        <svg class="ml-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span>Thêm vào giỏ</span>
+                    </button>
+                </div>
+
+                <div class="ml-product-card">
+                    <div class="ml-product-thumb">
+                        <img class="ml-product-img"
+                            src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                            alt="Bún đậu size vừa">
+                        <span class="ml-card-tag ml-card-tag--popular">Phổ biến</span>
+                    </div>
+                    <div class="ml-product-details">
+                        <h3 class="ml-product-title">Bún đậu size vừa</h3>
+                        <p class="ml-product-snippet">Thêm chả cốm và dồi sụn, khẩu phần vừa vặn cho 1 người ăn trưa.</p>
+                        <div class="ml-price-row">
+                            <span class="ml-price-label">Giá:</span>
+                            <span class="ml-price">49.000đ</span>
+                        </div>
+                    </div>
+                    <button class="ml-btn-buy ml-btn-buy--card" data-name="Bún đậu size vừa" type="button">
+                        <svg class="ml-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span>Thêm vào giỏ</span>
+                    </button>
+                </div>
+
+                <div class="ml-product-card">
+                    <div class="ml-product-thumb">
+                        <img class="ml-product-img"
+                            src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                            alt="Bún đậu size lớn">
+                        <span class="ml-card-tag ml-card-tag--full">Đầy đặn</span>
+                    </div>
+                    <div class="ml-product-details">
+                        <h3 class="ml-product-title">Bún đậu size lớn</h3>
+                        <p class="ml-product-snippet">Thêm thịt bắp luộc và nem rán, nhiều topping ăn no bụng.</p>
+                        <div class="ml-price-row">
+                            <span class="ml-price-label">Giá:</span>
+                            <span class="ml-price">69.000đ</span>
+                        </div>
+                    </div>
+                    <button class="ml-btn-buy ml-btn-buy--card" data-name="Bún đậu size lớn" type="button">
+                        <svg class="ml-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span>Thêm vào giỏ</span>
+                    </button>
+                </div>
+
+                <div class="ml-product-card">
+                    <div class="ml-product-thumb">
+                        <img class="ml-product-img"
+                            src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                            alt="Bún đậu size đại">
+                        <span class="ml-card-tag ml-card-tag--special">Đặc biệt</span>
+                    </div>
+                    <div class="ml-product-details">
+                        <h3 class="ml-product-title">Bún đậu size đại</h3>
+                        <p class="ml-product-snippet">Đầy đủ topping cho người ăn khỏe hoặc gọi ăn chung 2 người.</p>
+                        <div class="ml-price-row">
+                            <span class="ml-price-label">Giá:</span>
+                            <span class="ml-price">79.000đ</span>
+                        </div>
+                    </div>
+                    <button class="ml-btn-buy ml-btn-buy--card" data-name="Bún đậu size đại" type="button">
+                        <svg class="ml-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span>Thêm vào giỏ</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Customer reviews: 5 sao, 3 sao, 1 sao -->
+        <section id="reviews" class="ml-section-container ml-reviews-section">
+            <div class="ml-section-header">
+                <span class="ml-sub-heading-pill">ĐÁNH GIÁ</span>
+                <h2 class="ml-section-title">Nhận Xét Của Khách Hàng</h2>
+                <p class="ml-section-subtitle">Một số phản hồi từ khách ăn tại quán và đặt qua ứng dụng giao hàng</p>
+            </div>
+
+            <div class="ml-trust-stats-bar">
+                <div class="ml-stat-box">
+                    <span class="ml-stat-number">4.2 / 5</span>
+                    <span class="ml-stat-stars">★★★★☆</span>
+                    <span class="ml-stat-desc">Đánh giá chung của khách</span>
+                </div>
+                <div class="ml-stat-box">
+                    <span class="ml-stat-number">25 - 35 Phút</span>
+                    <span class="ml-stat-label">Thời gian giao hàng</span>
+                    <span class="ml-stat-desc">Tùy khoảng cách và thời tiết</span>
+                </div>
+                <div class="ml-stat-box">
+                    <span class="ml-stat-number">Ăn trong ngày</span>
+                    <span class="ml-stat-label">Chất lượng món</span>
+                    <span class="ml-stat-desc">Đậu rán và rau thơm chuẩn bị mới</span>
+                </div>
+            </div>
+
+            <div class="ml-reviews-grid">
+                <!-- Review 1: 5 sao khen ngợi -->
+                <div class="ml-review-card">
+                    <div class="ml-review-header">
+                        <div class="ml-reviewer-avatar">TA</div>
+                        <div class="ml-reviewer-meta">
+                            <h4 class="ml-reviewer-name">Tuấn Anh</h4>
+                            <span class="ml-reviewer-badge">Ăn tại quán</span>
+                        </div>
+                    </div>
+                    <div class="ml-review-stars">★★★★★</div>
+                    <p class="ml-review-comment">
+                        “Đậu rán nóng giòn, chả cốm với dồi sụn ngon. Mắm tôm pha vừa miệng, cho nhiều quất ớt. Quán phục vụ nhanh, giá cả hợp lý.”
+                    </p>
+                    <span class="ml-review-dish">Gọi: Mẹt size vừa</span>
+                </div>
+
+                <!-- Review 2: 3 sao đồng tình kèm góp ý -->
+                <div class="ml-review-card">
+                    <div class="ml-review-header">
+                        <div class="ml-reviewer-avatar">HT</div>
+                        <div class="ml-reviewer-meta">
+                            <h4 class="ml-reviewer-name">Hà Trang</h4>
+                            <span class="ml-reviewer-badge">Đặt giao hàng</span>
+                        </div>
+                    </div>
+                    <div class="ml-review-stars">★★★☆☆</div>
+                    <p class="ml-review-comment">
+                        “Đồ ăn vị ổn, mắm tôm ngon nhưng giờ trưa quán đông nên đợi shipper giao hơi lâu, đậu đến nơi bớt giòn một chút. Lần sau sẽ ghé quán ăn trực tiếp.”
+                    </p>
+                    <span class="ml-review-dish">Gọi: Mẹt đặc biệt cỡ L</span>
+                </div>
+
+                <!-- Review 3: 1 sao chê bai -->
+                <div class="ml-review-card">
+                    <div class="ml-review-header">
+                        <div class="ml-reviewer-avatar">KD</div>
+                        <div class="ml-reviewer-meta">
+                            <h4 class="ml-reviewer-name">Khách đặt trưa</h4>
+                            <span class="ml-reviewer-badge">Giao hàng</span>
+                        </div>
+                    </div>
+                    <div class="ml-review-stars">★☆☆☆☆</div>
+                    <p class="ml-review-comment">
+                        “Mắm tôm hôm nay mặn quá, quên không bỏ quất ớt cho mình. Ship đến trễ gần 40 phút đồ nguội ngắt.”
+                    </p>
+                    <span class="ml-review-dish">Gọi: Bún đậu size nhỏ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="ml-site-footer">
+            <div class="ml-footer-grid">
+                <div class="ml-footer-col ml-footer-col--brand">
+                    <h3 class="ml-footer-title">Shop Bún</h3>
+                    <p class="ml-footer-desc">
+                        Chuyên bún đậu mắm tôm truyền thống Hà Nội. Phục vụ khách ăn tại chỗ và nhận đơn mang về, giao hàng tận nơi.
+                    </p>
+
+                    <div class="ml-social-block">
+                        <span class="ml-social-label">Kênh liên hệ:</span>
+                        <div class="ml-social-links">
+                            <a href="https://facebook.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://zalo.me" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Zalo">
+                                <span class="ml-zalo-text">Zalo</span>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="TikTok">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V16a8 8 0 1 1-8-8c.7 0 1.4.1 2 .3V12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ml-footer-col">
+                    <h4 class="ml-footer-heading">Giờ Phục Vụ</h4>
+                    <ul class="ml-footer-info-list">
+                        <li><strong>Thứ 2 - Thứ 6:</strong> 09:00 - 21:30</li>
+                        <li><strong>Thứ 7 - Chủ Nhật:</strong> 08:30 - 22:00</li>
+                        <li><em>(Có chỗ để xe máy khi ăn tại quán)</em></li>
+                        <li class="ml-hotline-box">
+                            <span class="ml-hotline-tag">HOTLINE ĐẶT MÓN:</span>
+                            <a href="tel:0353868234" class="ml-phone-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                0353 868 234
+                            </a>
+                        </li>
+                        <li><strong>Email:</strong> gummybee5003@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="ml-footer-col">
+                    <h4 class="ml-footer-heading">Khu Vực Phục Vụ</h4>
+                    <p class="ml-address-text">
+                        Nhận đơn giao hàng khu vực nội thành Hà Nội.
+                    </p>
+                    <div class="ml-map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119175.27419163655!2d105.7469279!3d21.028511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd8161ae9%3A0x47d51d1e310e9494!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700000000000" 
+                            width="100%" 
+                            height="150" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Bản đồ khu vực Hà Nội">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ml-footer-bottom">
+                <div class="ml-footer-bottom-flex">
+                    <p>© 2026 Shop Bún. Bún đậu mắm tôm gia truyền Hà Nội.</p>
+                    <p class="ml-sub-guarantee">Mở cửa hàng ngày từ 09:00 đến 21:30</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="ml-toast" class="ml-toast-notification" role="status" aria-live="polite"></div>
+
+    <script src="js/toast.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/pricing.js"></script>
+    <script src="js/scrollspy.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

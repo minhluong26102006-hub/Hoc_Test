@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body.ml-body {
+    background-color: var(--ml-bg-page);
+    color: var(--ml-text-primary);
+    font-family: var(--ml-font-main);
+    line-height: 1.6;
+    padding: 16px 20px 36px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ml-page-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
