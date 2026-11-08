@@ -1,0 +1,517 @@
+/* Product Detail Page Styling */
+.ml-product-detail-wrapper {
+    background-color: var(--ml-bg-card);
+    border: 1px solid var(--ml-border-color);
+    border-radius: var(--ml-radius-xl);
+    box-shadow: var(--ml-shadow-card);
+    padding: 36px;
+    margin-bottom: 32px;
+}
+
+/* Two-column layout */
+.ml-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Left: Image Gallery */
+.ml-gallery {
+    position: sticky;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ml-main-image-wrap {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--ml-radius-md);
+    background-color: var(--ml-bg-accent);
+    border: 1px solid var(--ml-border-color);
+    box-shadow: 0 4px 14px rgba(61, 46, 33, 0.08);
+}
+
+.ml-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease, opacity 0.25s ease;
+}
+
+.ml-gallery-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--ml-cta-gradient);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ml-thumbnails-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.ml-thumb-item {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: var(--ml-radius-sm);
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: var(--ml-bg-accent);
+    transition: all 0.2s ease;
+    opacity: 0.7;
+}
+
+.ml-thumb-item:hover {
+    opacity: 1;
+    border-color: var(--ml-primary-hover);
+}
+
+.ml-thumb-item.ml-thumb-item--active {
+    opacity: 1;
+    border-color: var(--ml-primary-accent);
+    box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
+}
+
+.ml-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right: Product Info & Configurator */
+.ml-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ml-detail-header {
+    border-bottom: 1px solid var(--ml-border-color);
+    padding-bottom: 16px;
+}
+
+.ml-detail-title {
+    font-family: var(--ml-font-heading);
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--ml-text-dark);
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.ml-detail-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--ml-text-secondary);
+}
+
+.ml-detail-rating {
+    color: #F59E0B;
+    font-weight: 700;
+}
+
+.ml-detail-sold {
+    color: var(--ml-text-secondary);
+}
+
+/* Price Box */
+.ml-price-box {
+    background-color: var(--ml-bg-accent);
+    border: 1px solid rgba(234, 88, 12, 0.2);
+    border-radius: var(--ml-radius-md);
+    padding: 16px 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.ml-price-box-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ml-text-secondary);
+}
+
+.ml-price-box-val {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--ml-price-color);
+}
+
+.ml-price-box-note {
+    font-size: 12.5px;
+    color: var(--ml-text-secondary);
+}
+
+.ml-detail-desc {
+    font-size: 14px;
+    color: var(--ml-text-secondary);
+    line-height: 1.65;
+}
+
+/* Variant Selector: Size Pills */
+.ml-variant-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ml-variant-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ml-text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ml-variant-selected-hint {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ml-primary-accent);
+}
+
+.ml-size-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ml-size-label {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 14px;
+    background-color: #FFFFFF;
+    border: 1.5px solid var(--ml-border-color);
+    border-radius: var(--ml-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.ml-size-label:hover {
+    border-color: var(--ml-border-strong);
+    background-color: #FFFDF9;
+}
+
+.ml-size-label input[type="radio"] {
+    display: none;
+}
+
+.ml-size-label.ml-size-label--active {
+    border-color: var(--ml-primary-accent);
+    background-color: #FFF4E5;
+    box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.18);
+}
+
+.ml-size-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ml-text-dark);
+}
+
+.ml-size-desc {
+    font-size: 12px;
+    color: var(--ml-text-secondary);
+    margin-top: 2px;
+}
+
+.ml-size-price {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ml-price-color);
+    margin-top: 4px;
+}
+
+/* Variant Selector: Sauce Radio */
+.ml-sauce-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.ml-sauce-label {
+    padding: 8px 16px;
+    border: 1.5px solid var(--ml-border-color);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.ml-sauce-label input {
+    display: none;
+}
+
+.ml-sauce-label.ml-sauce-label--active {
+    background: var(--ml-cta-gradient);
+    color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(234, 88, 12, 0.25);
+}
+
+/* Variant Selector: Add-on Topping Checkboxes */
+.ml-addons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ml-addon-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border: 1px solid var(--ml-border-color);
+    border-radius: var(--ml-radius-sm);
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.ml-addon-item:hover {
+    background-color: #FFFDF9;
+    border-color: var(--ml-border-strong);
+}
+
+.ml-addon-item.ml-addon-item--checked {
+    border-color: var(--ml-primary-accent);
+    background-color: #FFF7ED;
+}
+
+.ml-addon-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ml-text-dark);
+}
+
+.ml-addon-left input[type="checkbox"] {
+    accent-color: var(--ml-primary-accent);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.ml-addon-price {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ml-price-color);
+}
+
+/* Quantity & CTA Buttons */
+.ml-action-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ml-border-color);
+    flex-wrap: wrap;
+}
+
+.ml-qty-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid var(--ml-border-color);
+    border-radius: var(--ml-radius-sm);
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.ml-qty-btn {
+    width: 38px;
+    height: 42px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ml-text-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease;
+    user-select: none;
+}
+
+.ml-qty-btn:hover {
+    background-color: var(--ml-bg-accent);
+    color: var(--ml-primary-accent);
+}
+
+.ml-qty-input {
+    width: 44px;
+    height: 42px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--ml-font-main);
+    color: var(--ml-text-dark);
+    outline: none;
+}
+
+.ml-btn-add-cart {
+    flex: 1.2;
+    padding: 13px 22px;
+    font-size: 14.5px;
+}
+
+.ml-btn-buy-now {
+    flex: 1;
+    background-color: #2E2114;
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--ml-radius-sm);
+    padding: 13px 18px;
+    font-size: 14.5px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(46, 33, 20, 0.2);
+}
+
+.ml-btn-buy-now:hover {
+    background-color: #1A130C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(46, 33, 20, 0.3);
+}
+
+/* Tabs Section: Description & Ingredients */
+.ml-tabs-section {
+    margin-top: 36px;
+    border-top: 1px solid var(--ml-border-color);
+    padding-top: 28px;
+}
+
+.ml-detail-tabs-header {
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid var(--ml-border-color);
+    margin-bottom: 20px;
+}
+
+.ml-detail-tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--ml-text-secondary);
+    cursor: pointer;
+    position: relative;
+    bottom: -2px;
+    transition: all 0.2s ease;
+}
+
+.ml-detail-tab-btn.ml-detail-tab-btn--active {
+    color: var(--ml-primary-accent);
+    border-bottom: 2px solid var(--ml-primary-accent);
+}
+
+.ml-tab-content-panel {
+    display: none;
+    font-size: 14px;
+    color: var(--ml-text-secondary);
+    line-height: 1.7;
+}
+
+.ml-tab-content-panel.ml-tab-content-panel--active {
+    display: block;
+}
+
+.ml-ingredients-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.ml-ingredients-list li {
+    background-color: var(--ml-bg-page);
+    border-radius: var(--ml-radius-sm);
+    padding: 8px 12px;
+    font-size: 13.5px;
+    color: var(--ml-text-primary);
+}
+
+.ml-ingredients-list strong {
+    color: var(--ml-text-dark);
+}
+
+/* Related Products */
+.ml-related-section {
+    margin-top: 36px;
+}
+
+.ml-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .ml-detail-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .ml-gallery {
+        position: static;
+    }
+
+    .ml-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .ml-product-detail-wrapper {
+        padding: 20px 16px;
+    }
+
+    .ml-detail-title {
+        font-size: 24px;
+    }
+
+    .ml-size-options {
+        grid-template-columns: 1fr;
+    }
+
+    .ml-action-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ml-qty-control {
+        align-self: flex-start;
+    }
+
+    .ml-ingredients-list {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún Đậu Mẹt Thập Cẩm Đặc Biệt - Shop Bún</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+
+<body class="ml-body">
+
+    <div class="ml-page-wrapper">
+
+        <!-- Navigation bar -->
+        <header class="ml-site-header">
+            <div class="ml-header-brand-wrap">
+                <a href="index.html" class="ml-brand-link">
+                    <h1 class="ml-brand-title">Shop Bún</h1>
+                    <span class="ml-brand-tagline">Bún đậu mắm tôm truyền thống</span>
+                </a>
+            </div>
+
+            <nav class="ml-main-nav" aria-label="Menu chính">
+                <a href="index.html" class="ml-nav-link">Trang chủ</a>
+                <a href="collection.html" class="ml-nav-link">Thực đơn</a>
+                <a href="product-detail.html" class="ml-nav-link ml-nav-link--active">Món đặc biệt</a>
+                <a href="index.html#reviews" class="ml-nav-link">Đánh giá</a>
+                <a href="#contact" class="ml-nav-link">Liên hệ</a>
+            </nav>
+
+            <div class="ml-cart-status" title="Số lượng món trong giỏ hàng">
+                <svg class="ml-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="ml-cart-label">Giỏ hàng:</span>
+                <span id="ml-cart-count" class="ml-cart-badge">0</span>
+            </div>
+        </header>
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="ml-breadcrumb" aria-label="Đường dẫn trang" style="margin-bottom: 20px;">
+            <a href="index.html" class="ml-breadcrumb-link">Trang chủ</a>
+            <span> / </span>
+            <a href="collection.html" class="ml-breadcrumb-link">Thực đơn</a>
+            <span> / </span>
+            <span class="ml-breadcrumb-current">Mẹt Thập Cẩm Đặc Biệt</span>
+        </nav>
+
+        <!-- Product Detail Main Container -->
+        <main class="ml-product-detail-wrapper">
+            <div class="ml-detail-layout">
+
+                <!-- Left Column: Gallery -->
+                <div class="ml-gallery">
+                    <div class="ml-main-image-wrap">
+                        <img id="ml-main-image" class="ml-main-image"
+                            src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                            alt="Mẹt bún đậu đặc biệt đầy đặn">
+                        <span class="ml-gallery-badge">MÓN BÁN CHẠY NHẤT</span>
+                    </div>
+
+                    <!-- 4 Thumbnails: Bấm để đổi ảnh lớn -->
+                    <div class="ml-thumbnails-row">
+                        <div class="ml-thumb-item ml-thumb-item--active"
+                            data-full-img="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp">
+                            <img class="ml-thumb-img"
+                                src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                                alt="Toàn cảnh mẹt bún">
+                        </div>
+                        <div class="ml-thumb-item"
+                            data-full-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80">
+                            <img class="ml-thumb-img"
+                                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+                                alt="Cận cảnh đậu rán giòn">
+                        </div>
+                        <div class="ml-thumb-item"
+                            data-full-img="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80">
+                            <img class="ml-thumb-img"
+                                src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=400&q=80"
+                                alt="Chả cốm và nem rán">
+                        </div>
+                        <div class="ml-thumb-item"
+                            data-full-img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80">
+                            <img class="ml-thumb-img"
+                                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80"
+                                alt="Bát mắm tôm quất ớt">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Info & Configurator -->
+                <div class="ml-detail-info">
+
+                    <div class="ml-detail-header">
+                        <h2 class="ml-detail-title">Bún Đậu Mẹt Thập Cẩm Đặc Biệt</h2>
+                        <div class="ml-detail-meta">
+                            <span class="ml-detail-rating">★★★★★ 4.9 / 5.0 (120+ lượt đánh giá)</span>
+                            <span>•</span>
+                            <span class="ml-detail-sold">Đã bán: 850+ suất</span>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Price Display -->
+                    <div class="ml-price-box">
+                        <span class="ml-price-box-label">Tổng tiền:</span>
+                        <span id="ml-detail-total-price" class="ml-price-box-val">99.000đ</span>
+                        <span class="ml-price-box-note">(Đã bao gồm topping gọi thêm)</span>
+                    </div>
+
+                    <p class="ml-detail-desc">
+                        Mẹt bún thập cẩm đầy đủ topping đặc sắc nhất của quán: bún lá cắt miếng, đậu hũ lướt ván rán nóng giòn,
+                        thịt bắp chân giò luộc thái mỏng, chả cốm Ước Lễ dẻo bùi, nem rán giòn rụm, dồi sụn nướng than hoa
+                        và đĩa rau thơm tươi sạch kèm mắm tôm pha quất ớt sủi bọt dậy mùi.
+                    </p>
+
+                    <!-- Variant 1: Kích cỡ Combo (Size) -->
+                    <div class="ml-variant-group">
+                        <div class="ml-variant-title">
+                            <span>1. Chọn kích cỡ mẹt bún:</span>
+                            <span id="ml-selected-size-hint" class="ml-variant-selected-hint">Đã chọn: Cỡ M</span>
+                        </div>
+
+                        <div class="ml-size-options">
+                            <label class="ml-size-label ml-size-label--active">
+                                <input type="radio" name="size" value="M" checked>
+                                <span class="ml-size-name">Cỡ M - Tiêu chuẩn</span>
+                                <span class="ml-size-desc">Khẩu phần 1 người ăn</span>
+                                <span class="ml-size-price">99.000đ</span>
+                            </label>
+
+                            <label class="ml-size-label">
+                                <input type="radio" name="size" value="L">
+                                <span class="ml-size-name">Cỡ L - No bụng</span>
+                                <span class="ml-size-desc">Khẩu phần 1 đến 2 người</span>
+                                <span class="ml-size-price">139.000đ</span>
+                            </label>
+
+                            <label class="ml-size-label">
+                                <input type="radio" name="size" value="XL">
+                                <span class="ml-size-name">Cỡ XL - Đầy đặn</span>
+                                <span class="ml-size-desc">Khẩu phần 2 đến 3 người</span>
+                                <span class="ml-size-price">189.000đ</span>
+                            </label>
+
+                            <label class="ml-size-label">
+                                <input type="radio" name="size" value="XXL">
+                                <span class="ml-size-name">Cỡ XXL - Siêu to</span>
+                                <span class="ml-size-desc">Khẩu phần 3 đến 4 người</span>
+                                <span class="ml-size-price">249.000đ</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Variant 2: Loại nước chấm -->
+                    <div class="ml-variant-group">
+                        <div class="ml-variant-title">
+                            <span>2. Chọn loại nước chấm:</span>
+                        </div>
+
+                        <div class="ml-sauce-options">
+                            <label class="ml-sauce-label ml-sauce-label--active">
+                                <input type="radio" name="sauce" value="Mắm tôm truyền thống" checked>
+                                <span>Mắm tôm truyền thống (quất + ớt)</span>
+                            </label>
+                            <label class="ml-sauce-label">
+                                <input type="radio" name="sauce" value="Nước mắm chua ngọt">
+                                <span>Nước mắm chua ngọt (cho người không ăn mắm tôm)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Variant 3: Topping gọi thêm (Checkboxes) -->
+                    <div class="ml-variant-group">
+                        <div class="ml-variant-title">
+                            <span>3. Gọi thêm đồ ăn kèm (Tùy chọn):</span>
+                        </div>
+
+                        <div class="ml-addons-list">
+                            <label class="ml-addon-item">
+                                <span class="ml-addon-left">
+                                    <input type="checkbox" class="ml-addon-checkbox" data-name="Thêm Chả cốm" data-price="20000">
+                                    <span>Thêm 1 đĩa chả cốm chiên</span>
+                                </span>
+                                <span class="ml-addon-price">+20.000đ</span>
+                            </label>
+
+                            <label class="ml-addon-item">
+                                <span class="ml-addon-left">
+                                    <input type="checkbox" class="ml-addon-checkbox" data-name="Thêm Dồi sụn" data-price="25000">
+                                    <span>Thêm 1 đĩa dồi sụn chiên giòn</span>
+                                </span>
+                                <span class="ml-addon-price">+25.000đ</span>
+                            </label>
+
+                            <label class="ml-addon-item">
+                                <span class="ml-addon-left">
+                                    <input type="checkbox" class="ml-addon-checkbox" data-name="Thêm Nem rán" data-price="25000">
+                                    <span>Thêm đĩa nem rán giòn rụm</span>
+                                </span>
+                                <span class="ml-addon-price">+25.000đ</span>
+                            </label>
+
+                            <label class="ml-addon-item">
+                                <span class="ml-addon-left">
+                                    <input type="checkbox" class="ml-addon-checkbox" data-name="Thêm Đậu rán" data-price="15000">
+                                    <span>Thêm đĩa đậu rán lướt ván nóng hổi</span>
+                                </span>
+                                <span class="ml-addon-price">+15.000đ</span>
+                            </label>
+
+                            <label class="ml-addon-item">
+                                <span class="ml-addon-left">
+                                    <input type="checkbox" class="ml-addon-checkbox" data-name="Thêm Thịt bắp" data-price="30000">
+                                    <span>Thêm đĩa thịt bắp luộc thái mỏng</span>
+                                </span>
+                                <span class="ml-addon-price">+30.000đ</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Control & Action Buttons -->
+                    <div class="ml-action-row">
+                        <div class="ml-qty-control" title="Chọn số lượng suất ăn">
+                            <button id="ml-qty-minus" class="ml-qty-btn" type="button" aria-label="Giảm số lượng">-</button>
+                            <input id="ml-qty-input" class="ml-qty-input" type="number" value="1" min="1" max="50" readonly>
+                            <button id="ml-qty-plus" class="ml-qty-btn" type="button" aria-label="Tăng số lượng">+</button>
+                        </div>
+
+                        <button id="ml-btn-add-detail" class="ml-btn-buy ml-btn-buy--primary ml-btn-add-cart" type="button">
+                            <svg class="ml-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                        <button id="ml-btn-buy-now" class="ml-btn-buy-now" type="button">
+                            Đặt giao ngay
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tabs Section: Detailed Ingredients & Guide -->
+            <section class="ml-tabs-section">
+                <div class="ml-detail-tabs-header">
+                    <button class="ml-detail-tab-btn ml-detail-tab-btn--active" data-tab="tab-ingredients" type="button">
+                        Thành phần định lượng
+                    </button>
+                    <button class="ml-detail-tab-btn" data-tab="tab-guide" type="button">
+                        Hướng dẫn thưởng thức
+                    </button>
+                    <button class="ml-detail-tab-btn" data-tab="tab-safety" type="button">
+                        Cam kết của quán
+                    </button>
+                </div>
+
+                <!-- Tab 1: Thành phần -->
+                <div id="tab-ingredients" class="ml-tab-content-panel ml-tab-content-panel--active">
+                    <p>Mỗi phần bún đậu đặc biệt (cỡ tiêu chuẩn M) được chuẩn bị với đầy đủ định lượng sạch sẽ:</p>
+                    <ul class="ml-ingredients-list">
+                        <li><strong>Bún lá:</strong> 300g bún tươi cắt miếng vừa ăn</li>
+                        <li><strong>Đậu hũ mơ:</strong> 4 miếng lớn chiên phồng nóng giòn</li>
+                        <li><strong>Thịt bắp chân giò:</strong> 100g thái lát mỏng ngọt mềm</li>
+                        <li><strong>Chả cốm:</strong> 2 miếng chiên dẻo thơm hạt cốm non</li>
+                        <li><strong>Nem rán:</strong> 2 cuốn nem vàng giòn ráo dầu</li>
+                        <li><strong>Dồi sụn:</strong> 1 cây cắt khoanh nướng sần sật</li>
+                        <li><strong>Rau ăn kèm:</strong> Kinh giới, tía tô, dưa chuột tươi rửa sạch</li>
+                        <li><strong>Gia vị chấm:</strong> Mắm tôm Thanh Hóa, quất tươi, ớt chỉ thiên và đường</li>
+                    </ul>
+                </div>
+
+                <!-- Tab 2: Hướng dẫn -->
+                <div id="tab-guide" class="ml-tab-content-panel">
+                    <p><strong>Cách thưởng thức ngon nhất:</strong></p>
+                    <p>1. Vắt quất, cho thêm ớt tươi và một chút đường vào bát mắm tôm rồi dùng đũa đánh bông sủi bọt trắng mịn.</p>
+                    <p>2. Chấm miếng đậu rán nóng hổi hoặc lát chả cốm ăn kèm một lá kinh giới, tía tô để cảm nhận trọn vẹn hương vị truyền thống Hà Nội.</p>
+                    <p>3. Khi gọi ship về nhà nếu muốn giòn tan như tại quán: cho đậu và chả cốm vào nồi chiên không dầu quay ở 160°C trong 3 phút.</p>
+                </div>
+
+                <!-- Tab 3: Cam kết an toàn -->
+                <div id="tab-safety" class="ml-tab-content-panel">
+                    <p>• <strong>100% dầu ăn mới:</strong> Quán thay dầu chiên liên tục trong ngày, tuyệt đối không dùng dầu chiên đi chiên lại.</p>
+                    <p>• <strong>Đậu mơ gia truyền:</strong> Đậu lấy mới mỗi sớm mai từ làng Mơ, chỉ chiên ngay khi khách gọi món.</p>
+                    <p>• <strong>Bao bì thân thiện:</strong> Đóng hộp giấy thực phẩm sạch sẽ, giữ nhiệt tốt và an toàn cho sức khỏe.</p>
+                </div>
+            </section>
+
+            <!-- Related Products Section -->
+            <section class="ml-related-section">
+                <h3 class="ml-section-title">Gợi Ý Món Ăn & Đồ Uống Đi Kèm</h3>
+                <div class="ml-related-grid">
+
+                    <article class="ml-product-card">
+                        <div class="ml-product-thumb">
+                            <img class="ml-product-img"
+                                src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                                alt="Trà tắc mật ong">
+                            <span class="ml-card-tag ml-card-tag--save">Đồ uống</span>
+                        </div>
+                        <div class="ml-product-details">
+                            <h4 class="ml-product-title">Trà tắc mật ong đá</h4>
+                            <p class="ml-product-snippet">Chua ngọt thanh mát, giải ngấy cực tốt khi ăn kèm bún đậu.</p>
+                            <div class="ml-price-row">
+                                <span class="ml-price">15.000đ</span>
+                            </div>
+                        </div>
+                        <button class="ml-btn-buy ml-btn-buy--card" data-name="Trà tắc mật ong" type="button">
+                            <span>Thêm vào giỏ</span>
+                        </button>
+                    </article>
+
+                    <article class="ml-product-card">
+                        <div class="ml-product-thumb">
+                            <img class="ml-product-img"
+                                src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                                alt="Nước mơ ngâm">
+                            <span class="ml-card-tag ml-card-tag--popular">Đồ uống</span>
+                        </div>
+                        <div class="ml-product-details">
+                            <h4 class="ml-product-title">Nước mơ ngâm đường</h4>
+                            <p class="ml-product-snippet">Nước mơ chùa Hương ngâm đường chua dịu thơm nức.</p>
+                            <div class="ml-price-row">
+                                <span class="ml-price">15.000đ</span>
+                            </div>
+                        </div>
+                        <button class="ml-btn-buy ml-btn-buy--card" data-name="Nước mơ ngâm đường" type="button">
+                            <span>Thêm vào giỏ</span>
+                        </button>
+                    </article>
+
+                    <article class="ml-product-card">
+                        <div class="ml-product-thumb">
+                            <img class="ml-product-img"
+                                src="https://cms.junglebosstours.com/assets/9f3c4c7c-4056-4eff-b8dd-c83500150b62?format=webp"
+                                alt="Nem rán giòn">
+                            <span class="ml-card-tag ml-card-tag--full">Topping</span>
+                        </div>
+                        <div class="ml-product-details">
+                            <h4 class="ml-product-title">Nem rán giòn rụm (Thêm)</h4>
+                            <p class="ml-product-snippet">Đĩa 3 cuốn nem vỏ mỏng rán ráo dầu, nhân thịt mộc nhĩ.</p>
+                            <div class="ml-price-row">
+                                <span class="ml-price">25.000đ</span>
+                            </div>
+                        </div>
+                        <button class="ml-btn-buy ml-btn-buy--card" data-name="Nem rán giòn thêm" type="button">
+                            <span>Thêm vào giỏ</span>
+                        </button>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="contact" class="ml-site-footer">
+            <div class="ml-footer-grid">
+                <div class="ml-footer-col ml-footer-col--brand">
+                    <h3 class="ml-footer-title">Shop Bún</h3>
+                    <p class="ml-footer-desc">
+                        Chuyên bún đậu mắm tôm truyền thống Hà Nội. Phục vụ khách ăn tại chỗ và nhận đơn mang về, giao hàng tận nơi.
+                    </p>
+
+                    <div class="ml-social-block">
+                        <span class="ml-social-label">Kênh liên hệ:</span>
+                        <div class="ml-social-links">
+                            <a href="https://facebook.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://zalo.me" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Zalo">
+                                <span class="ml-zalo-text">Zalo</span>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener" class="ml-social-btn" aria-label="TikTok">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V16a8 8 0 1 1-8-8c.7 0 1.4.1 2 .3V12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ml-footer-col">
+                    <h4 class="ml-footer-heading">Giờ Phục Vụ</h4>
+                    <ul class="ml-footer-info-list">
+                        <li><strong>Thứ 2 - Thứ 6:</strong> 09:00 - 21:30</li>
+                        <li><strong>Thứ 7 - Chủ Nhật:</strong> 08:30 - 22:00</li>
+                        <li><em>(Có chỗ để xe máy khi ăn tại quán)</em></li>
+                        <li class="ml-hotline-box">
+                            <span class="ml-hotline-tag">HOTLINE ĐẶT MÓN:</span>
+                            <a href="tel:0353868234" class="ml-phone-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                0353 868 234
+                            </a>
+                        </li>
+                        <li><strong>Email:</strong> gummybee5003@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="ml-footer-col">
+                    <h4 class="ml-footer-heading">Khu Vực Phục Vụ</h4>
+                    <p class="ml-address-text">
+                        Nhận đơn giao hàng khu vực nội thành Hà Nội.
+                    </p>
+                    <div class="ml-map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096814234563!2d105.8501258!3d21.028822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab953357c99f%3A0x6b758b2a76a5da39!2zSOG7kyBIb8OgbiBLaeG6v20!5e0!3m2!1svi!2s!4v1700000000000" 
+                            width="100%" 
+                            height="150" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Bản đồ khu vực Hà Nội">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ml-footer-bottom">
+                <div class="ml-footer-bottom-flex">
+                    <p>© 2026 Shop Bún. Bún đậu mắm tôm gia truyền Hà Nội.</p>
+                    <p class="ml-sub-guarantee">Mở cửa hàng ngày từ 09:00 đến 21:30</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Toast Notification Popup -->
+    <div id="ml-toast" class="ml-toast-notification" role="status" aria-live="polite"></div>
+
+    <script src="js/toast.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+
+</html>
+
